@@ -8,3 +8,8 @@ def read_input(filename):
             column1.append(num1)
             column2.append(num2)
     return column1, column2
+
+def read_string(filename):
+    with open(f'../inputs/{filename}', 'r') as file:
+        data = file.read()
+    return data
